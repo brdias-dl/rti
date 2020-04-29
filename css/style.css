@@ -79,3 +79,9 @@ body {
 .configs-item p {
 	font-size: 13px;
 }
+
+::-webkit-scrollbar {
+	margin-top: 5px;
+	height: 4px;
+	border: 1px solid #d5d5d5;
+  }
