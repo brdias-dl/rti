@@ -54,6 +54,8 @@ body {
 	align-items: center;
 	flex-wrap: nowrap;
 
+	overflow: auto;
+	white-space: nowrap;
 }
 
 .configs-item {
