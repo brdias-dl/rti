@@ -33,54 +33,7 @@ body {
 	padding: 15px;
 }
 
-.configsContainer {
-	width: 100%;
-	height: 250px;
-
-	display: flex;
-	flex-direction: column;
-
-}
-
-.configsTitle {
-	margin-left: 5px;
-}
-
-.configsBody {
-	height: 100%;
-	padding: 0 5px;
-
-	display: flex;
-	align-items: center;
-	flex-wrap: nowrap;
-
-	overflow: auto;
-	white-space: nowrap;
-}
-
-.configs-item {
-	width: 100%;
-	height: 200px;
-
-	max-width: 190px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-
-	background: var(--background-accent);
-
-	border-radius: 5px;
-	padding: 5px;
-	margin-right: 15px;
-}
-
-.configs-item p {
-	font-size: 13px;
-}
-
 ::-webkit-scrollbar {
 	margin-top: 5px;
 	height: 4px;
-  }
+}
