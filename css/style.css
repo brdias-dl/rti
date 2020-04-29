@@ -38,8 +38,6 @@ body {
 	border-style: solid;
 	border-width: thin;
 
-	padding-left: 5px;
-
 	width: 100%;
 	height: 150px;
 
@@ -48,10 +46,27 @@ body {
 
 }
 
+.configsTitle {
+	left: 5px;
+}
+
 .configsBody {
 	border-color: blue;
 	border-style: solid;
-	border-width: thin;	
+	border-width: thin;
 
 	height: 100%;
+}
+
+.configs-item {
+	width: 100%;
+	height: 100px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: var(--background-color);
+
+	border-radius: 5px;
 }
