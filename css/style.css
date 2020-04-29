@@ -1,0 +1,33 @@
+:root {
+	--background-color: #3d3d5a;
+	--background-accent: #394264;
+
+	--white: #f6f7f9;
+}
+
+@font-face {
+	font-family: 'Carrois Gothic SC';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Carrois Gothic SC Regular'), local('CarroisGothicSC-Regular'), url(https://fonts.gstatic.com/s/carroisgothicsc/v9/ZgNJjOVHM6jfUZCmyUqT2A2HVKjc-18gPnc.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+	font-family: 'Carrois Gothic SC';
+	background: var(--background-color);
+	padding: .5px .5px;
+	position: relative;
+}
+
+#welcomeContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+#welcomeMessage {
+	color: var(--white);
+	padding: 15px;
+}

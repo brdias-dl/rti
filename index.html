@@ -19,32 +19,50 @@
     <script src="https://kit.fontawesome.com/8397bfe9f0.js" crossorigin="anonymous"></script>
     <link href="//fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>SPA</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <button class="navbar-toggler pull-left" type="button" onclick="a()" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler pull-left" type="button" onclick="a()" data-toggle="collapse"
+            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"><i class="fas fa-2x fa-home"></i> <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-2x fa-cog"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div class="nav-item-template">
+                        <a class="nav-link" href="#"><i class="fas fa-2x fa-home"></i></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-template">
+                        <a class="nav-link" href="#"><i class="fas fa-2x fa-cog"></i></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-template">
+                        <a class="nav-link" href="#"><i class="fas fa-2x fa-cog"></i></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-template">
+                        <a class="nav-link" href="#"><i class="fas fa-2x fa-cog"></i></a>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
+    <div id="welcomeContainer">
+        <img src="images/home.png">
+        <p id="welcomeMessage">Welcome home!</p>
+    </div>
 
-      <script src="index.js">
-  </script>
+    <script src="js/index.js">
+    </script>
 </body>
 
 </html>
