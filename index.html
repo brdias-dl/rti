@@ -110,14 +110,36 @@
     <br><br><br><br>
     <div id="appliancesContainer">
         <div id="appliancesTitle">
-            <h3>appliances</h3><i onclick="createAppliance()" class="fas fa-plus-circle add"></i>
+            <h3>appliances</h3><i data-toggle="modal" data-target="#createApplianceModal"
+                class="fas fa-plus-circle add"></i>
         </div>
         <div id="appliancesBody">
         </div>
     </div>
 
-    <input type="text" placeholder="name" id="name">
-    <input type="text" placeholder="icon" id="icon">
+    <!-- Modal -->
+    <div class="modal fade" id="createApplianceModal" tabindex="-1" role="dialog" aria-labelledby="createApplianceModal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a New Appliance</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="name" id="name">
+                    <input type="text" placeholder="icon" id="icon">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button id="createApplianceBtn" type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/index.js">
     </script>
