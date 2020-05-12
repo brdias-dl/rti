@@ -70,7 +70,7 @@
 	color: white;
 }
 
-#icondropdown-btn {
+.btn-group {
 	width: 50%;
 }
 
@@ -98,4 +98,8 @@
 	border-width: 0px;
 	color: white;
 	text-align: left;
+}
+
+#icondropdown-btn .dropdown-menu {
+	width: inherit;
 }
