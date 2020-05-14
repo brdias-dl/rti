@@ -52,7 +52,6 @@ var iconsArray = {
     "Dollar": "fa-dollar-sign",
     "Euro": "fa-euro-sign",
     "Hryvnia": "fa-hryvnia",
-    "Libra": "fa-libra-sign",
     "Money Bill": "fa-money-bill",
     "Pound": "fa-pound-sign",
     "Ruble": "fa-ruble-sign",
