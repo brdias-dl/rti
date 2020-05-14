@@ -20,11 +20,8 @@
 <body>
     <div id="loginpage">
         <div class="loginbody">
-            <label for="username">username</label>
-            <input id="loginusername" name="username" type="text">
-
-            <label for="password">password</label>
-            <input id="loginpassword" name="password" type="password">
+            <label for="email">email</label>
+            <input id="loginemail" name="email" type="email">
             <button id="loginpress">Login</button>
         </div>
     </div>
@@ -178,6 +175,7 @@
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
 
     <script>
     // Your web app's Firebase configuration
@@ -193,8 +191,9 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     </script>
-    
+
     <script src="js/index.js"></script>
+    <script src="js/auth.js"></script>
 
 </body>
 

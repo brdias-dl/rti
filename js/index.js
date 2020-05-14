@@ -115,18 +115,6 @@ document.getElementById("createPreviewBtn").onclick = function(name) {
     `;
 };
 
-$("#loginpress").click(() => {
-    if(!$("#loginusername").value == 0 || !$("#loginpassword").value == 0){
-        alert("Tem que introduzir algo nos campos");
-        return;
-    }
-
-    console.log("pressed");
-
-    $("#loginpage").slideToggle(500);
-    setTimeout(() => $("#homepage").slideToggle(500), 500);
-});
-
 $(document).ready(() => {
     var iconsappliances = document.getElementById("iconsappliances");
     for (var name in iconsArray) {
