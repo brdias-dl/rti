@@ -37,3 +37,43 @@ body {
 	margin-top: 5px;
 	height: 4px;
 }
+
+
+#loginpage {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+.loginbody {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+
+	padding: 30px;
+
+	align-content: center;
+}
+
+.loginbody input{
+	width: 100%;
+	background: var(--background-accent);
+	border-width: 0px;
+
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+
+	margin-bottom: 15px;
+}
+
+.loginbody button{
+	border-radius: 8px;
+	background-color: var(--background-accent);
+	color: white;
+	border-width: 0;
+
+	height: 35px;
+}

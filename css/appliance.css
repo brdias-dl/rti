@@ -60,18 +60,19 @@
     padding-top: 10px;
 }
 
-#icondropdown-input{
-	width: 50%;
+#appliancename-input{
+	width: 75%;
 	background: var(--background-accent);
 	border-width: 0px;
-}
 
-#icondropdown-input::placeholder{
+	border-radius: 5px;
+	text-align: center;
 	color: white;
+	margin: 5px;
 }
 
-.btn-group {
-	width: 50%;
+#appliancename-input::placeholder{
+	color: white;
 }
 
 #createApplianceModal .modal-body{
@@ -100,6 +101,26 @@
 	text-align: left;
 }
 
-#icondropdown-btn .dropdown-menu {
-	width: inherit;
+#iconsdropdownbutton {
+	width: 75%;
+	background-color: var(--background-accent);
+	border-width: 0px;
+	color: white;
+	margin: 5px;
+
+	border-radius: 5px;
+}
+
+.dropdown-menu {
+	width: 75%;
+}
+
+.modaltwocolumn {
+	display: flex;
+	flex-direction: row;
+}
+
+#createPreviewBtn {
+	background-color: var(--background-accent);
+	border-width: 0;
 }
