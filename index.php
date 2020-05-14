@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/configuration.css">
     <link rel="stylesheet" href="css/appliance.css">
-    <title>SPA</title>
+
+    <link rel="manifest" href="brdias-dl.webmanifest">
+    <title>RTI - Grupo 8</title>
 </head>
 
 <body>
