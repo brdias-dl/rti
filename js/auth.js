@@ -1,6 +1,6 @@
 $(document).ready(() => {
     var actionCodeSettings = {
-        url: 'http://127.0.0.1:5501/index.html',
+        url: 'https://rtigrupo8.herokuapp.com/',
         handleCodeInApp: true
     };
 
