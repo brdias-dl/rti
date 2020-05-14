@@ -6,7 +6,6 @@ $(document).ready(() => {
 
     var useremail;
     
-
     
 
     $("#loginpress").click(() => {
