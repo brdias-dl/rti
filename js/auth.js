@@ -35,7 +35,7 @@ $(document).ready(() => {
     if (firebase.auth().isSignInWithEmailLink(window.location.href)) {
         var email = window.localStorage.getItem('emailForSignIn');
         if (!email) {
-        email = window.prompt('Please provide your email for confirmation');
+        email = window.prompt('Por favor, introduza o seu e-mail para confirmação');
         }
         firebase.auth().signInWithEmailLink(email, window.location.href)
         .then(function(result) {
