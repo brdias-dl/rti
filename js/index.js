@@ -52,6 +52,6 @@ $("#loginpress").click(() => {
     console.log("pressed");
 
     $("#loginpage").slideToggle(500);
-    setTimeout(function(){ $("#homepage").slideToggle(500) }, 500);
+    setTimeout(() => $("#homepage").slideToggle(500), 500);
 });
 
