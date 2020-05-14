@@ -40,7 +40,7 @@
 	flex-direction: column;
     flex-shrink: 0;
 
-	background: var(--background-accent);
+	background: var(--accent);
 
 	border-radius: 5px;
 	padding: 5px;
@@ -62,32 +62,32 @@
 
 #appliancename-input{
 	width: 75%;
-	background: var(--background-accent);
+	background: var(--accent);
 	border-width: 0px;
 
 	border-radius: 5px;
 	text-align: center;
-	color: white;
+	color: var(--text);
 	margin: 5px;
 }
 
 #appliancename-input::placeholder{
-	color: white;
+	color: var(--text);
 }
 
 #createApplianceModal .modal-body{
-	background: var(--background-color);
-	border-color: var(--background-accent);
+	background: var(--background);
+	border-color: var(--accent);
 }
 
 #createApplianceModal .modal-header{
-	background: var(--background-color);
-	border-color: var(--background-accent);
+	background: var(--background);
+	border-color: var(--accent);
 }
 
 #createApplianceModal .modal-footer{
-	background: var(--background-color);
-	border-color: var(--background-accent);
+	background: var(--background);
+	border-color: var(--accent);
 	border-bottom-width: 0px;
 }
 
@@ -97,15 +97,15 @@
 
 .closeApplianceModalBtn{
 	border-width: 0px;
-	color: white;
+	color: var(--text);
 	text-align: left;
 }
 
 #iconsdropdownbutton {
 	width: 75%;
-	background-color: var(--background-accent);
+	background-color: var(--accent);
 	border-width: 0px;
-	color: white;
+	color: var(--text);
 	margin: 5px;
 
 	border-radius: 5px;
@@ -121,6 +121,12 @@
 }
 
 #createPreviewBtn {
-	background-color: var(--background-accent);
+	background-color: var(--accent);
 	border-width: 0;
+}
+
+#iconsappliances {
+    height: auto;
+    max-height: 300px;
+    overflow-x: hidden;
 }

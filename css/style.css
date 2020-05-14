@@ -1,25 +1,23 @@
 :root {
-	--background-color: #3d3d5a;
-	--background-accent: #535486;
+	--background: #F6F0EA;
+	--calltoaction: #FF715B;
+	--accent: #1EA896;
+	--other: #4C5454;
+	--text: #FFFFFF;
 
-	--white: #f6f7f9;
 }
 
-@font-face {
-	font-family: 'Carrois Gothic SC';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Carrois Gothic SC Regular'), local('CarroisGothicSC-Regular'), url(https://fonts.gstatic.com/s/carroisgothicsc/v9/ZgNJjOVHM6jfUZCmyUqT2A2HVKjc-18gPnc.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body {
-	font-family: 'Carrois Gothic SC';
-	background: var(--background-color);
+	font-family: 'Roboto', sans-serif;
+	background: var(--background);
+	color: var(--other);
+
 	padding: .5px .5px;
 	position: relative;
 
-	color: var(--white);
+	
 }
 
 #welcomeContainer {
@@ -38,72 +36,3 @@ body {
 	height: 4px;
 }
 
-
-#loginpage {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-}
-
-.loginbody {
-	height: 50vh;
-	display: flex;
-	flex-direction: column;
-
-	padding: 30px;
-
-	align-content: center;
-}
-
-.loginbody input{
-	width: 100%;
-	background: var(--background-accent);
-	border-width: 0px;
-
-	border-radius: 5px;
-	text-align: center;
-	color: white;
-
-	margin-bottom: 15px;
-}
-
-.loginbody button{
-	border-radius: 8px;
-	background-color: var(--background-accent);
-	color: white;
-	border-width: 0;
-
-	height: 35px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#iconsappliances {
-    height: auto;
-    max-height: 300px;
-    overflow-x: hidden;
-}

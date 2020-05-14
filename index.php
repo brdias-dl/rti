@@ -4,23 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+        Abaixo estão os links que adicionam o CSS necessário. 
+        Estão separados por comentários em branco, e cada conjunto deve ser considerado uma categoria de links.
+        A primeira categoria é para os links que adicionam fontes.
+        A segunda categoria é para CDNs, que trazem conteúdos externos, maioritariamente css, para o nosso proveito.
+        A terceira categoria é para ficheiros nossos. Cada um deve estar na diretoria correspondente ao seu tipo de ficheiro.
+    -->
+
+    <!-- -->
+    <link href="//fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet" type="text/css">
+    <!-- -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <script src="https://kit.fontawesome.com/8397bfe9f0.js" crossorigin="anonymous"></script>
-    <link href="//fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet" type="text/css">
-
+    <!-- -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/configuration.css">
     <link rel="stylesheet" href="css/appliance.css">
+    <!-- -->
 
+    <!-- 
+        A linha abaixo corresponde ao ficheiro webmanifest, que contém informação para o Browser utilizar
+        a API Emerging Web Browser, permitindo o utilizador "instalar" a nossa aplicação web, caso o Browser
+        permita.
+        Isto não instala a aplicação nativamente, apenas permite um mais fácil acesso ao utilizador e
+        disponibiliza-nos algumas funcionalidades extra, como push notifications. 
+    -->
     <link rel="manifest" href="brdias-dl.webmanifest">
+
+    <!-- 
+        A linha abaixo corresponde ao título da aplicação web.
+    -->
     <title>RTI - Grupo 8</title>
 </head>
 
 <body>
-    <div id="loginpage">
+    <!-- 
+        De forma a uma utilização mais fluída, nós estamos a utilizar o conceito SPA (Single Page Application),
+        ou seja, a nossa aplicação web tem uma única página. Utilizamos Javascript e CSS para criar/alterar
+        o conteúdo mostrado, dando ao utilizador a ilusão de uma aplicação nativa.
+        Para uma fácil explicação, iremos assumir que temos várias páginas, cada uma dentro de uma tag div.
+
+        Atualmente temos duas páginas, a login_page e home_page. Utilizando a propriedade CSS "display", podemos
+        escolher a forma como os elements HTML são mostrados ou, no nosso caso, escondidos.
+        A página inicial, por defeito, é a login_page então a página home_page está escondida utilizando: "display: none;".
+        Após a autenticação, a aplicação coloca a propriedade com o valor "block".
+    -->
+    <div id="login_page">
+        &ldquo; Home is where our story begins… &rdquo;
         <div class="loginbody">
             <label for="email">email</label>
             <input id="loginemail" name="email" type="email">
@@ -171,7 +205,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-
+<script src="https://kit.fontawesome.com/8397bfe9f0.js" crossorigin="anonymous"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
 

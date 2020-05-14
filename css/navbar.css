@@ -1,5 +1,5 @@
 .navbar {
-    background: var(--background-color);
+    background: var(--background);
 }
 
 .navbar-nav {
@@ -29,7 +29,7 @@
     justify-content: center;
     align-items: center;
 
-    background: var(--background-color);
+    background: var(--background);
 
     border-radius: 5px;
 }
