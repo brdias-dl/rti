@@ -15,6 +15,9 @@
 
     <!-- -->
     <link href="//fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -53,46 +56,87 @@
         A página inicial, por defeito, é a login_page então a página home_page está escondida utilizando: "display: none;".
         Após a autenticação, a aplicação coloca a propriedade com o valor "block".
     -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler pull-left" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mx-auto" href="#">RTI - Grupo 8</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div class="nav-item-template">
+                        <a class="nav-link" href="#"><i class="fas fa-2x fa-home"></i></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-template">
+                        <a class="nav-link" href="#"><i class="fas fa-2x fa-cog"></i></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-template">
+                        <a class="nav-link" href="#"><i class="fas fa-2x fa-cog"></i></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item-template">
+                        <a class="nav-link" href="#"><i class="fas fa-2x fa-cog"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div id="login_page">
-        &ldquo; Home is where our story begins… &rdquo;
+
         <div class="loginbody">
-            <label for="email">email</label>
-            <input id="loginemail" name="email" type="email">
-            <button id="loginpress">Login</button>
+            <div class="loginhead">
+                <p>SIGN-IN</p>
+            </div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="passwordless" role="tabpanel"
+                    aria-labelledby="passwordless-tab">
+                    <input class="loginemail" name="email" type="email" placeholder="E-mail">
+                    <button id="loginpress">Login</button>
+                </div>
+                <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+                    <input class="loginemail" name="email" type="email" placeholder="E-mail">
+                    <input id="loginpass" name="password" type="password" placeholder="Password">
+                    <button id="loginpress">Login</button>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <a href="#" class="fb btn">
+                        <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                    </a>
+                    <a href="#" class="github btn">
+                        <i class="fa fa-github fa-fw"></i> Login with Github
+                    </a>
+                    <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                        </i> Login with Google
+                    </a>
+                </div>
+            </div>
+            <ul class="nav nav-tabs tabs-below" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="passwordless-tab" data-toggle="tab" href="#passwordless" role="tab"
+                        aria-controls="passwordless" aria-selected="true">Hiperligação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="password-tab" data-toggle="tab" href="#password" role="tab"
+                        aria-controls="password" aria-selected="false">Email/Password</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                        aria-controls="contact" aria-selected="false">Redes Sociais</a>
+                </li>
+            </ul>
+
+
+
         </div>
     </div>
     <div id="homepage" style="display: none;">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <button class="navbar-toggler pull-left" type="button" data-toggle="collapse"
-                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <div class="nav-item-template">
-                            <a class="nav-link" href="#"><i class="fas fa-2x fa-home"></i></a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="nav-item-template">
-                            <a class="nav-link" href="#"><i class="fas fa-2x fa-cog"></i></a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="nav-item-template">
-                            <a class="nav-link" href="#"><i class="fas fa-2x fa-cog"></i></a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="nav-item-template">
-                            <a class="nav-link" href="#"><i class="fas fa-2x fa-cog"></i></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+
 
 
         <div id="welcomeContainer">
@@ -205,7 +249,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-<script src="https://kit.fontawesome.com/8397bfe9f0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8397bfe9f0.js" crossorigin="anonymous"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
 
@@ -214,18 +258,18 @@
     <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
 
     <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyAhg6KuPzzFk6smyV84xRG0KrWP0AilQEg",
-        authDomain: "rti1-bcf88.firebaseapp.com",
-        databaseURL: "https://rti1-bcf88.firebaseio.com",
-        projectId: "rti1-bcf88",
-        storageBucket: "rti1-bcf88.appspot.com",
-        messagingSenderId: "378464672025",
-        appId: "1:378464672025:web:ebeceb338348acea4ecd88"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAhg6KuPzzFk6smyV84xRG0KrWP0AilQEg",
+            authDomain: "rti1-bcf88.firebaseapp.com",
+            databaseURL: "https://rti1-bcf88.firebaseio.com",
+            projectId: "rti1-bcf88",
+            storageBucket: "rti1-bcf88.appspot.com",
+            messagingSenderId: "378464672025",
+            appId: "1:378464672025:web:ebeceb338348acea4ecd88"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
     </script>
 
     <script src="js/index.js"></script>

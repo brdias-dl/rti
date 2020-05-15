@@ -1,24 +1,39 @@
 #login_page {
-	height: 100vh;
+	height: 50vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-content: center;
+}
+
+.loginhead {
+	height: max-content;
+
+	text-align: center;
+
+	border-bottom-color: lightgray;
+	border-style: solid;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 2px;
+
+	padding-top: 10px;
+
+	
+}
+
+.loginhead p {
+	font-family: 'Dosis';
+	font-weight: bolder;
 }
 
 .loginbody {
-    height: 50vh;
-	display: flex;
-	flex-direction: column;
-
-	padding: 30px;
-
-    align-content: center;
+	height: max-content;
+	margin-top: 50px;
     
     border-radius: 15px;
     border-style: solid;
-    border-color: black;
-    border-width: 2px;
+    border-color: lightgrey;
+    border-width: 0.4px;
 
     background-color: var(--white);
     box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
@@ -27,14 +42,22 @@
 
 .loginbody input{
 	width: 100%;
-	background: var(--accent);
-	border-width: 0px;
+	background: var(--white);
 
-	border-radius: 5px;
-	text-align: center;
-	color: var(--text);
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 1px;
 
-	margin-bottom: 15px;
+	border-bottom-color: black;
+
+	color: var(--other);
+
+	margin-bottom: 20px;
+}
+
+.loginbody input:focus{
+	outline: none;
 }
 
 .loginbody button{
@@ -45,3 +68,68 @@
 
 	height: 35px;
 }
+
+
+
+
+
+.tabs-below {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row !important;
+
+	border-bottom-width: 0px;
+	border-top: 1px solid #dee2e6;
+  }
+  
+  .tabs-below .nav-link {
+	  border: 1px solid transparent;
+	  border-top-left-radius: 0px;
+	  border-top-right-radius: 0px;
+	  border-bottom-left-radius: 5px;
+	  border-bottom-right-radius: 5px;
+  }
+  
+  .tabs-below .nav-item {
+	width: max-content !important;
+
+	margin-bottom: 0px;
+	margin-top: -1px;
+  }
+  
+  .tabs-below .nav-item.show .nav-link, .tabs-below .nav-link.active {
+	border-color: #fff #dee2e6 #dee2e6  #dee2e6;
+  }
+
+  .tab-pane.active{
+	padding: 30px;
+	  display: flex !important;
+	  flex-direction: column;
+
+  }
+
+
+
+
+
+
+
+
+  .fb {
+	background-color: #3B5998;
+	color: white;
+  }
+  
+  .github {
+	background-color: #24292e;
+	color: white;
+  }
+  
+  .google {
+	background-color: #dd4b39;
+	color: white;
+  }
+
+  .tab-pane#contact a{
+	margin: 5px;
+  }

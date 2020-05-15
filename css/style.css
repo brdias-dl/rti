@@ -2,33 +2,18 @@
 	--background: #F6F0EA;
 	--calltoaction: #FF715B;
 	--accent: #1EA896;
-	--other: #4C5454;
+	--majortext: #4C5454;
 	--text: #FFFFFF;
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
 body {
 	font-family: 'Roboto', sans-serif;
 	background: var(--background);
-	color: var(--other);
+	color: var(--majortext);
 
 	padding: .5px .5px;
 	position: relative;
-
-	
-}
-
-#welcomeContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-}
-
-#welcomeMessage {
-	padding: 15px;
 }
 
 ::-webkit-scrollbar {

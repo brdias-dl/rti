@@ -1,5 +1,5 @@
 .navbar {
-    background: var(--background);
+    background: var(--accent);
 }
 
 .navbar-nav {
@@ -32,4 +32,12 @@
     background: var(--background);
 
     border-radius: 5px;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-brand {
+    font-weight: bold;
 }
