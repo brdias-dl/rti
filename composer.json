@@ -1,8 +1,8 @@
 {
     "scripts": {
       "compile": [
-        "chmod 755 well-known/",
-        "chmod 644 well-known/pki-validation/F0997337EAA32EF01AE59C3ED1D86ACE.txt"
+        "chmod 755 .well-known/",
+        "chmod 644 .well-known/pki-validation/F0997337EAA32EF01AE59C3ED1D86ACE.txt"
       ]
     }
   }
