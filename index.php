@@ -123,7 +123,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="password-tab" data-toggle="tab" href="#password" role="tab"
-                        aria-controls="password" aria-selected="false">Email/Password</a>
+                        aria-controls="password" aria-selected="false">Password</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
