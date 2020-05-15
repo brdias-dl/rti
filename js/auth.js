@@ -175,5 +175,9 @@ firebase.auth().signOut().then(function() {
 
 function entrar() {
     $("#login_page").slideToggle(500);
-    setTimeout(() => $("#home_page").slideToggle(500), 500);
+    setTimeout(() => {
+        $("#home_page").slideToggle(500)
+        $(".navbar-toggler").fadeToggle(500);
+        $(".dropdownuser").fadeToggle(500); 
+        }, 500);
 }
