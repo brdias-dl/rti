@@ -112,10 +112,10 @@ $(document).ready(() => {
 
     $("#loginpress").click(() => {
         for (let index = 0; index < document.getElementsByClassName("loginemail").length; index++) {
-            if (document.getElementsByClassName("loginemail")[i] === "") {
+            if (document.getElementsByClassName("loginemail")[index] === "") {
                 continue;
             }
-            useremail = document.getElementsByClassName("loginemail")[i].value;
+            useremail = document.getElementsByClassName("loginemail")[index].value;
             break;
         }
 

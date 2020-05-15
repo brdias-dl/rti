@@ -21,3 +21,32 @@ body {
 	height: 4px;
 }
 
+input{
+	width: 100%;
+	background: var(--white);
+
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 1px;
+
+	border-bottom-color: black;
+
+	color: var(--other);
+
+	margin-bottom: 20px;
+}
+
+input:focus{
+	outline: none;
+}
+
+button{
+	border-radius: 8px;
+	background-color: var(--accent);
+	color: var(--text);
+	border-width: 0;
+
+	height: 35px;
+}
+
