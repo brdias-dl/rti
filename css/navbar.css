@@ -34,14 +34,21 @@
     border-radius: 5px;
 }
 
-.navbar-toggler {
-    display: none;
-}
-
-.dropdownuser {
-    display: none;
-}
-
 .navbar-brand {
     font-weight: bold;
+}
+
+#navbar > .container {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar > .container > .row {
+    width: inherit !important;
+}
+#navbar > .container > .row > .col {
+    width: 33% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

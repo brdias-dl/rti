@@ -12,18 +12,13 @@ $(document).ready(() => {
         firebase.auth().useDeviceLanguage();
 
         firebase.auth().signInWithPopup(provider).then(function (result) {
-            // This gives you a Facebook Access Token. You can use it to access the Facebook API.
             var token = result.credential.accessToken;
-            // The signed-in user info.
             var user = result.user;
             entrar();
         }).catch(function (error) {
-            // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
-            // The email of the user's account used.
             var email = error.email;
-            // The firebase.auth.AuthCredential type that was used.
             var credential = error.credential;
             console.log("Error Code: " + errorCode);
             console.log("Error Message: " + errorMessage);
@@ -38,18 +33,13 @@ $(document).ready(() => {
         firebase.auth().useDeviceLanguage();
 
         firebase.auth().signInWithPopup(provider).then(function (result) {
-            // This gives you a Facebook Access Token. You can use it to access the Facebook API.
             var token = result.credential.accessToken;
-            // The signed-in user info.
             var user = result.user;
             entrar();
         }).catch(function (error) {
-            // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
-            // The email of the user's account used.
             var email = error.email;
-            // The firebase.auth.AuthCredential type that was used.
             var credential = error.credential;
             console.log("Error Code: " + errorCode);
             console.log("Error Message: " + errorMessage);
@@ -64,18 +54,13 @@ $(document).ready(() => {
         firebase.auth().useDeviceLanguage();
 
         firebase.auth().signInWithPopup(provider).then(function (result) {
-            // This gives you a Facebook Access Token. You can use it to access the Facebook API.
             var token = result.credential.accessToken;
-            // The signed-in user info.
             var user = result.user;
             entrar();
         }).catch(function (error) {
-            // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
-            // The email of the user's account used.
             var email = error.email;
-            // The firebase.auth.AuthCredential type that was used.
             var credential = error.credential;
             console.log("Error Code: " + errorCode);
             console.log("Error Message: " + errorMessage);
@@ -90,18 +75,13 @@ $(document).ready(() => {
         firebase.auth().useDeviceLanguage();
 
         firebase.auth().signInWithPopup(provider).then(function (result) {
-            // This gives you a Facebook Access Token. You can use it to access the Facebook API.
             var token = result.credential.accessToken;
-            // The signed-in user info.
             var user = result.user;
             entrar();
         }).catch(function (error) {
-            // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
-            // The email of the user's account used.
             var email = error.email;
-            // The firebase.auth.AuthCredential type that was used.
             var credential = error.credential;
             console.log("Error Code: " + errorCode);
             console.log("Error Message: " + errorMessage);
@@ -162,11 +142,10 @@ $(document).ready(() => {
 
 
 /*
+TODO: Implement Sign-Out
 
 firebase.auth().signOut().then(function() {
-  // Sign-out successful.
 }).catch(function(error) {
-  // An error happened.
 });
 
 
@@ -177,7 +156,6 @@ function entrar() {
     $("#login_page").slideToggle(500);
     setTimeout(() => {
         $("#home_page").slideToggle(500)
-        $(".navbar-toggler").fadeToggle(500);
-        $(".dropdownuser").fadeToggle(500); 
+        $("#navbar").fadeToggle(500);
         }, 500);
 }
