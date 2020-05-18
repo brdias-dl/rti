@@ -45,6 +45,15 @@
 	border-radius: 5px;
 	padding: 5px;
 	margin-right: 15px;
+
+	clip-path: circle(0.0% at 50% 50%);
+	transition: clip-path .5s ease-in-out;
+
+	background-clip: content-box;
+}
+
+.appliances-item:hover {
+	clip-path: circle(75%); 
 }
 
 .appliances-item-image{

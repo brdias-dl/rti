@@ -57,4 +57,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+}
+
+@keyframes slidetotheleft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slidetotheright {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }

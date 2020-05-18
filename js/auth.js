@@ -3,7 +3,7 @@ $(document).ready(() => {
         url: 'https://rtigrupo8.herokuapp.com/',
         handleCodeInApp: true
     };
-
+//var isHovered = $('#elem').is(":hover");
     var useremail;
 
     $(".fb.btn").click(() => {
@@ -154,9 +154,12 @@ firebase.auth().signOut().then(function() {
 
 function entrar() {
     //$("#login_page").slideToggle(500);
-    $("#login_page").animate({width:'toggle'},350);
+    //$("#login_page").animate({width:'toggle'},350);
+    document.getElementById("login_page").style = "background-color: var(--background); clip-path: circle(0% at 50% 50%);";
     setTimeout(() => {
-        $("#home_page").slideToggle(500)
+        document.getElementById("login_page").style = "display: none;";
+        document.getElementById("home_page").style = "background-color: var(--background); clip-path: circle(100% at 50% 50%);";
+        //$("#home_page").slideToggle(500)
         $("#navbar").fadeToggle(500);
-        }, 500);
+        }, 1000);
 }

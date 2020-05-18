@@ -132,4 +132,18 @@ $(".appliance-icon").click(function(event) {
         iconclicked = event.target.children[0].classList[1];
     }
 });
+
+
+$("#userbtn").click(function(event) {
+    console.log("Hey you. You're finally awake");
+    document.getElementById("home_page").style = "animation: slidetotheright 1s forwards;";
+    document.getElementById("user_page").style = "animation: slidetotheleft 1s forwards;";
 });
+$("#settingsbtn").click(function(event) {
+    document.getElementById("home_page").style = "animation: slidetotheleft 1s forwards;";
+    document.getElementById("settings_page").style = "animation: slidetotheleft 1s forwards;";
+});
+
+
+});
+

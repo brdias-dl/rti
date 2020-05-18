@@ -60,3 +60,8 @@ button{
 .fas.fa-2x.fa-plus-circle.add {
 	color: var(--text);
 }
+
+#home_page {
+	clip-path: circle(0% at 50% 50%);
+	transition: clip-path 1s ease-in-out;
+}
