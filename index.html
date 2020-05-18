@@ -36,9 +36,9 @@
         permita.
         Isto não instala a aplicação nativamente, apenas permite um mais fácil acesso ao utilizador e
         disponibiliza-nos algumas funcionalidades extra, como push notifications. 
-    
-    <link rel="manifest" href="brdias-dl.webmanifest">
     -->
+    <link rel="manifest" href="brdias-dl.webmanifest">
+    
     <!-- 
         A linha abaixo corresponde ao título da aplicação web.
     -->
@@ -58,239 +58,242 @@
         Após a autenticação, a aplicação "troca" os valores, ou seja, login_page passa a ter "display: none;" e home_page
         "display: block;".
     -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand mx-auto" href="#">RTI - Grupo 8</a>
-    </nav>
-
-    <div id="login_page" style="background-color: var(--background);">
-        <div class="loginbody">
-            <div class="loginhead">
-                <p>SIGN-IN</p>
-            </div>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="passwordless" role="tabpanel"
-                    aria-labelledby="passwordless-tab">
-                    <input class="loginemail" name="email" type="email" placeholder="E-mail">
-                    <button id="loginpress">Login</button>
+    <div id="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand mx-auto" href="#">RTI - Grupo 8</a>
+        </nav>
+    
+        <div id="login_page" style="background-color: var(--background);">
+            <div class="loginbody">
+                <div class="loginhead">
+                    <p>SIGN-IN</p>
                 </div>
-                <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
-                    <input class="loginemail" name="email" type="email" placeholder="E-mail">
-                    <input id="loginpass" name="password" type="password" placeholder="Password">
-                    <button id="loginpress">Login</button>
-                </div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                    <a href="#" class="fb btn">
-                        <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-                    </a>
-                    <a href="#" class="github btn">
-                        <i class="fa fa-github fa-fw"></i> Login with Github
-                    </a>
-                    <a href="#" class="google btn"><i class="fa fa-google fa-fw">
-                        </i> Login with Google
-                    </a>
-                </div>
-            </div>
-            <ul class="nav nav-tabs tabs-below" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="passwordless-tab" data-toggle="tab" href="#passwordless" role="tab"
-                        aria-controls="passwordless" aria-selected="true">Hiperligação</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="password-tab" data-toggle="tab" href="#password" role="tab"
-                        aria-controls="password" aria-selected="false">Password</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                        aria-controls="contact" aria-selected="false">Social</a>
-                </li>
-            </ul>
-
-
-
-        </div>
-    </div>
-    <div id="home_page" style="background-color: var(--background);">
-        <div id="configsContainer">
-            <div id="configsTitle">
-                <h3>Configurations</h3><i class="fas fa-plus-circle add"></i>
-            </div>
-            <div id="configsBody">
-                <div class="configs-item">
-                    <div class="configs-item-image">
-                        <i class="fas fa-3x fa-cannabis"></i>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="passwordless" role="tabpanel"
+                        aria-labelledby="passwordless-tab">
+                        <input class="loginemail" name="email" type="email" placeholder="E-mail">
+                        <button id="loginpress">Login</button>
                     </div>
-                    <div class="configs-item-text">
-                        <h4>party mode</h4>
-                        <p>Lorem ipsum dolor sit amet!</p>
+                    <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+                        <input class="loginemail" name="email" type="email" placeholder="E-mail">
+                        <input id="loginpass" name="password" type="password" placeholder="Password">
+                        <button id="loginpress">Login</button>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <a href="#" class="fb btn">
+                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                        </a>
+                        <a href="#" class="github btn">
+                            <i class="fa fa-github fa-fw"></i> Login with Github
+                        </a>
+                        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                            </i> Login with Google
+                        </a>
                     </div>
                 </div>
-                <div class="configs-item">
-                    <div class="configs-item-image">
-                        <i class="fas fa-3x fa-moon"></i>
-                    </div>
-                    <div class="configs-item-text">
-                        <h4>evening mode</h4>
-                        <p>Lorem ipsum dolor sit amet!</p>
-                    </div>
-                </div>
-                <div class="configs-item">
-                    <div class="configs-item-image">
-                        <i class="fas fa-3x fa-sun"></i></i>
-                    </div>
-                    <div class="configs-item-text">
-                        <h4>morning mode</h4>
-                        <p>Lorem ipsum dolor sit amet!</p>
-                    </div>
-                </div>
-                <div class="configs-item">
-                    <div class="configs-item-image">
-                        <i class="fas fa-3x fa-cloud-rain"></i>
-                    </div>
-                    <div class="configs-item-text">
-                        <h4>rain mode</h4>
-                        <p>Lorem ipsum dolor sit amet!</p>
-                    </div>
-                </div>
+                <ul class="nav nav-tabs tabs-below" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="passwordless-tab" data-toggle="tab" href="#passwordless" role="tab"
+                            aria-controls="passwordless" aria-selected="true">Hiperligação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="password-tab" data-toggle="tab" href="#password" role="tab"
+                            aria-controls="password" aria-selected="false">Password</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                            aria-controls="contact" aria-selected="false">Social</a>
+                    </li>
+                </ul>
+    
+    
+    
             </div>
         </div>
-        <br><br><br><br>
-        <div id="appliancesContainer">
-            <div id="appliancesTitle">
-                <h3>appliances</h3><i data-toggle="modal" data-target="#createApplianceModal"
-                    class="fas fa-plus-circle add"></i>
-            </div>
-            <div id="appliancesBody">
-                <div class="appliances-item">
-                    <div class="appliances-item-image">
-                        <i class="fas fa-2x fa-bell" aria-hidden="true"></i>
+        <div id="home_page" style="background-color: var(--background);">
+            <div id="configsContainer">
+                <div id="configsTitle">
+                    <h3>Configurations</h3><i class="fas fa-plus-circle add"></i>
+                </div>
+                <div id="configsBody">
+                    <div class="configs-item">
+                        <div class="configs-item-image">
+                            <i class="fas fa-3x fa-cannabis"></i>
+                        </div>
+                        <div class="configs-item-text">
+                            <h4>party mode</h4>
+                            <p>Lorem ipsum dolor sit amet!</p>
+                        </div>
                     </div>
-                    <div class="appliances-item-title">
-                        <h6>asd</h6>
+                    <div class="configs-item">
+                        <div class="configs-item-image">
+                            <i class="fas fa-3x fa-moon"></i>
+                        </div>
+                        <div class="configs-item-text">
+                            <h4>evening mode</h4>
+                            <p>Lorem ipsum dolor sit amet!</p>
+                        </div>
+                    </div>
+                    <div class="configs-item">
+                        <div class="configs-item-image">
+                            <i class="fas fa-3x fa-sun"></i></i>
+                        </div>
+                        <div class="configs-item-text">
+                            <h4>morning mode</h4>
+                            <p>Lorem ipsum dolor sit amet!</p>
+                        </div>
+                    </div>
+                    <div class="configs-item">
+                        <div class="configs-item-image">
+                            <i class="fas fa-3x fa-cloud-rain"></i>
+                        </div>
+                        <div class="configs-item-text">
+                            <h4>rain mode</h4>
+                            <p>Lorem ipsum dolor sit amet!</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="createApplianceModal" tabindex="-1" role="dialog"
-            aria-labelledby="createApplianceModal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Create a New Appliance</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span class="closeApplianceModalBtn" aria-hidden="true">&times;</span>
-                        </button>
+            <br><br><br><br>
+            <div id="appliancesContainer">
+                <div id="appliancesTitle">
+                    <h3>appliances</h3><i data-toggle="modal" data-target="#createApplianceModal"
+                        class="fas fa-plus-circle add"></i>
+                </div>
+                <div id="appliancesBody">
+                    <div class="appliances-item">
+                        <div class="appliances-item-image">
+                            <i class="fas fa-2x fa-bell" aria-hidden="true"></i>
+                        </div>
+                        <div class="appliances-item-title">
+                            <h6>asd</h6>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <div class="modaltwocolumn">
-                            <div class="infocolumn">
-                                <h3>Info</h3>
-                                <input type="text" placeholder=" name" id="appliancename-input">
-                                <div class="dropdown">
-                                    <button class="dropdown-toggle" type="button" id="iconsdropdownbutton"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Icon
-                                    </button>
-                                    <div id="iconsappliances" class="dropdown-menu"
-                                        aria-labelledby="iconsdropdownbutton">
+                </div>
+            </div>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="createApplianceModal" tabindex="-1" role="dialog"
+                aria-labelledby="createApplianceModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Create a New Appliance</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="closeApplianceModalBtn" aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modaltwocolumn">
+                                <div class="infocolumn">
+                                    <h3>Info</h3>
+                                    <input type="text" placeholder=" name" id="appliancename-input">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="iconsdropdownbutton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Icon
+                                        </button>
+                                        <div id="iconsappliances" class="dropdown-menu"
+                                            aria-labelledby="iconsdropdownbutton">
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="previewcolumn">
+                                    <h3>Preview</h3>
+                                    <div id="previewappliance"></div>
+                                </div>
                             </div>
-                            <div class="previewcolumn">
-                                <h3>Preview</h3>
-                                <div id="previewappliance"></div>
-                            </div>
+    
                         </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button id="createPreviewBtn" type="button" class="btn btn-primary">Preview</button>
-                        <button type="button" class="btn btn-secondary closeApplianceModalBtn"
-                            data-dismiss="modal">Close</button>
-                        <button id="createApplianceBtn" type="button" class="btn btn-primary">Create Appliance</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="user_page" style="display: none;">
-        <div id="configsContainer">
-            <div id="configsTitle">
-                <h3>Configurations</h3><i class="fas fa-plus-circle add"></i>
-            </div>
-            <div id="configsBody">
-                <div class="configs-item">
-                    <div class="configs-item-image">
-                        <i class="fas fa-3x fa-cannabis"></i>
-                    </div>
-                    <div class="configs-item-text">
-                        <h4>party mode</h4>
-                        <p>Lorem ipsum dolor sit amet!</p>
-                    </div>
-                </div>
-                <div class="configs-item">
-                    <div class="configs-item-image">
-                        <i class="fas fa-3x fa-moon"></i>
-                    </div>
-                    <div class="configs-item-text">
-                        <h4>evening mode</h4>
-                        <p>Lorem ipsum dolor sit amet!</p>
-                    </div>
-                </div>
-                <div class="configs-item">
-                    <div class="configs-item-image">
-                        <i class="fas fa-3x fa-sun"></i></i>
-                    </div>
-                    <div class="configs-item-text">
-                        <h4>morning mode</h4>
-                        <p>Lorem ipsum dolor sit amet!</p>
-                    </div>
-                </div>
-                <div class="configs-item">
-                    <div class="configs-item-image">
-                        <i class="fas fa-3x fa-cloud-rain"></i>
-                    </div>
-                    <div class="configs-item-text">
-                        <h4>rain mode</h4>
-                        <p>Lorem ipsum dolor sit amet!</p>
+                        <div class="modal-footer">
+                            <button id="createPreviewBtn" type="button" class="btn btn-primary">Preview</button>
+                            <button type="button" class="btn btn-secondary closeApplianceModalBtn"
+                                data-dismiss="modal">Close</button>
+                            <button id="createApplianceBtn" type="button" class="btn btn-primary">Create Appliance</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="settings_page" style="display: none;">
-        
-    </div>
-
-    <!-- 
-        Abaixo temos a nossa barra de navegação.
-    -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark" style="display: none !important;">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-
-                    <i id="settingsbtn" class="fas fa-2x fa-cog"></i>
-
+    
+        <div id="user_page" style="display: none;">
+            <div id="configsContainer">
+                <div id="configsTitle">
+                    <h3>Configurations</h3><i class="fas fa-plus-circle add"></i>
                 </div>
-                <div class="col">
-
-                    <i id="addStuffbtn" class="fas fa-2x fa-plus-circle add"></i>
-
-                </div>
-                <div class="col">
-
-                  <img id="userbtn" class="usercorner" src="images/user.jpg">
-              
+                <div id="configsBody">
+                    <div class="configs-item">
+                        <div class="configs-item-image">
+                            <i class="fas fa-3x fa-cannabis"></i>
+                        </div>
+                        <div class="configs-item-text">
+                            <h4>party mode</h4>
+                            <p>Lorem ipsum dolor sit amet!</p>
+                        </div>
+                    </div>
+                    <div class="configs-item">
+                        <div class="configs-item-image">
+                            <i class="fas fa-3x fa-moon"></i>
+                        </div>
+                        <div class="configs-item-text">
+                            <h4>evening mode</h4>
+                            <p>Lorem ipsum dolor sit amet!</p>
+                        </div>
+                    </div>
+                    <div class="configs-item">
+                        <div class="configs-item-image">
+                            <i class="fas fa-3x fa-sun"></i></i>
+                        </div>
+                        <div class="configs-item-text">
+                            <h4>morning mode</h4>
+                            <p>Lorem ipsum dolor sit amet!</p>
+                        </div>
+                    </div>
+                    <div class="configs-item">
+                        <div class="configs-item-image">
+                            <i class="fas fa-3x fa-cloud-rain"></i>
+                        </div>
+                        <div class="configs-item-text">
+                            <h4>rain mode</h4>
+                            <p>Lorem ipsum dolor sit amet!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-      
-        
-    </nav>
+    
+        <div id="settings_page" style="display: none;">
+            
+        </div>
+    
+        <!-- 
+            Abaixo temos a nossa barra de navegação.
+        -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark" style="display: none !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+    
+                        <i id="settingsbtn" class="fas fa-2x fa-cog"></i>
+    
+                    </div>
+                    <div class="col">
+    
+                        <i id="addStuffbtn" class="fas fa-2x fa-plus-circle add"></i>
+    
+                    </div>
+                    <div class="col">
+    
+                      <img id="userbtn" class="usercorner" src="images/user.jpg">
+                  
+                    </div>
+                </div>
+            </div>
+          
+            
+        </nav>
+    </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js">
     </script>
@@ -302,7 +305,8 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/8397bfe9f0.js" crossorigin="anonymous"></script>
-    
+
+    <script src="js/index.js" type="module"></script>
 
     <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>

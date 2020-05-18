@@ -48,8 +48,6 @@
 
 	clip-path: circle(0.0% at 50% 50%);
 	transition: clip-path .5s ease-in-out;
-
-	background-clip: content-box;
 }
 
 .appliances-item:hover {
