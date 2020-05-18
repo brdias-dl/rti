@@ -153,7 +153,8 @@ firebase.auth().signOut().then(function() {
 */
 
 function entrar() {
-    $("#login_page").slideToggle(500);
+    //$("#login_page").slideToggle(500);
+    $("#login_page").animate({width:'toggle'},350);
     setTimeout(() => {
         $("#home_page").slideToggle(500)
         $("#navbar").fadeToggle(500);
