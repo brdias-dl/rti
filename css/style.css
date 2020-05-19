@@ -6,7 +6,7 @@
 	--text: #FFFFFF;
 	background-color: var(--background);
 
-	font-size: 3.8vw;
+	font-size: calc(12px + 1vw)
 }
 
 body {
