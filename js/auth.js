@@ -153,10 +153,11 @@ firebase.auth().signOut().then(function() {
 */
 
 function entrar() {
-    //$("#login_page").slideToggle(500);
-    $("#login_page").animate({width:'toggle'},350);
+    $("#login_page").slideToggle(500);
     setTimeout(() => {
-        $("#home_page").slideToggle(500)
+        $("#home_page").slideToggle(500);
+        document.getElementById("user_page").style = "transform: translateX(100%);";
+        $("#settings_page").slideToggle(500);
         $("#navbar").fadeToggle(500);
         }, 500);
 }

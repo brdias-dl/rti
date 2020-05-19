@@ -2,6 +2,8 @@
 	height: 50vh;
 	display: flex;
 	flex-direction: column;
+
+	width: 100vw;
 }
 
 .loginhead {
@@ -39,12 +41,6 @@
     box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
 
 }
-
-
-
-
-
-
 
 
 

@@ -4,8 +4,6 @@
 	--accent: #1EA896;
 	--majortext: #4C5454;
 	--text: #FFFFFF;
-
-	
 	background-color: var(--background);
 }
 
@@ -16,6 +14,10 @@ body {
 
 	padding: .5px .5px;
 	position: relative;
+
+	font-size: 1.5vw;
+
+	overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -61,4 +63,63 @@ button{
 
 .fas.fa-2x.fa-plus-circle.add {
 	color: var(--text);
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+#home_page {
+	border-style: solid;
+	border-color: blue;
+
+	width: 56.2rem;
+    flex-shrink: 0;
+}
+
+#user_page {
+	border-style: solid;
+	border-color: red;
+
+	width: 56.2rem;
+    flex-shrink: 0;
+}
+
+
+
+@keyframes slidetotheleft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slidetotheright {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slidefromtheleft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slidefromtheright {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+		transform: translateX(0);
+	}
 }
