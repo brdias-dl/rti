@@ -5,6 +5,8 @@
 	--majortext: #4C5454;
 	--text: #FFFFFF;
 	background-color: var(--background);
+
+	font-size: 3.8vw;
 }
 
 body {
@@ -14,8 +16,6 @@ body {
 
 	padding: .5px .5px;
 	position: relative;
-
-	font-size: 5vw;
 
 	overflow-x: hidden;
 }
@@ -74,7 +74,7 @@ button{
 	border-style: solid;
 	border-color: blue;
 
-	width: 56.2rem;
+	width: 26.2rem;
     flex-shrink: 0;
 }
 
@@ -82,7 +82,7 @@ button{
 	border-style: solid;
 	border-color: red;
 
-	width: 56.2rem;
+	width: 26.2rem;
     flex-shrink: 0;
 }
 
