@@ -6,7 +6,7 @@
 	--text: #FFFFFF;
 	background-color: var(--background);
 
-	font-size: calc(12px + 1vw)
+	font-size: calc(12px + 1vw);
 }
 
 body {
@@ -74,7 +74,7 @@ button{
 	border-style: solid;
 	border-color: blue;
 
-	width: 26.2rem;
+	width: 25.4rem;
     flex-shrink: 0;
 }
 
@@ -82,7 +82,7 @@ button{
 	border-style: solid;
 	border-color: red;
 
-	width: 26.2rem;
+	width: 25.4rem;
     flex-shrink: 0;
 }
 
