@@ -5,11 +5,13 @@
 	--majortext: #4C5454;
 	--text: #FFFFFF;
 
+	
+	background-color: var(--background);
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background: var(--background);
+	background: var(--background) !important;
 	color: var(--majortext);
 
 	padding: .5px .5px;
