@@ -77,8 +77,9 @@ var iconsArray = {
     "Door Closed": "fa-door-closed",
     "Door Open": "fa-door-open"
 }
+var currentPage = "login_page";
 
-document.getElementById("createApplianceBtn").onclick = function(name) {
+document.getElementById("createApplianceBtn").onclick = function (name) {
     var appliancesBody = document.getElementById("appliancesBody");
     name = document.getElementById("appliancename-input").value;
 
@@ -94,8 +95,8 @@ document.getElementById("createApplianceBtn").onclick = function(name) {
     `;
 };
 
-document.getElementById("createPreviewBtn").onclick = function(name) {
-    if(iconclicked === ''){
+document.getElementById("createPreviewBtn").onclick = function (name) {
+    if (iconclicked === '') {
         alert("Deve escolher um icon");
         return;
     }
@@ -123,30 +124,56 @@ $(document).ready(() => {
             <i class="fas ${iconsArray[name]}"></i>
             &nbsp;&nbsp;${name}
         </button>
-        `;    
+        `;
     }
 
-    
-$(".appliance-icon").click(function(event) {
-    if (event.target.children[0].classList[1].match("^fa-")) {
-        iconclicked = event.target.children[0].classList[1];
-    }
+
+    $(".appliance-icon").click(function (event) {
+        if (event.target.children[0].classList[1].match("^fa-")) {
+            iconclicked = event.target.children[0].classList[1];
+        }
+    });
+
+
+    $("#userbtn").click(function (event) {
+        switch (currentPage) {
+            case "home_page":
+                $("#home_page").slideUp(500);
+                break;
+            case "user_page":
+                $("#user_page").slideUp(500);
+                break;
+            case "home_page":
+                $("#home_page").slideUp(500);
+                break;
+        }
+
+        setTimeout(() => {
+            $("#user_page").slideDown(500);
+            $("#userbtn").addClass("current");
+        }, 500);
+        currentPage = "user_page";
+    });
+    $("#settingsbtn").click(function (event) {
+        switch (currentPage) {
+            case "home_page":
+                $("#home_page").slideUp(500);
+                break;
+            case "user_page":
+                $("#user_page").slideUp(500);
+                break;
+            case "home_page":
+                $("#home_page").slideUp(500);
+                break;
+        }
+
+        setTimeout(() => {
+            $("#settings_page").slideDown(500);
+            $("#settingsbtn").addClass("current");
+
+        }, 500);
+        currentPage = "settings_page";
+    });
+
+
 });
-
-
-$("#userbtn").click(function(event) {
-    console.log("Hey you. You're finally awake");
-    document.getElementById("home_page").style = "animation: slidetotheleft 1s forwards;";
-    document.getElementById("user_page").style = "animation: slidefromtheright 1s forwards;";
-    setTimeout(() => {
-        document.getElementById("home_page").style = "display: none;";
-        }, 1000);
-});
-$("#settingsbtn").click(function(event) {
-    document.getElementById("home_page").style = "animation: slidetotheleft 1s forwards;";
-    document.getElementById("settings_page").style = "animation: slidetotheleft 1s forwards;";
-});
-
-
-});
-

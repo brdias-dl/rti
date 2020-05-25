@@ -6,7 +6,9 @@
 	--text: #FFFFFF;
 	background-color: var(--background);
 
-	font-size: calc(12px + 1vw);
+	font-size: 15px;
+	max-width: 25.59rem;
+	max-height: 52.5rem;
 }
 
 body {
@@ -71,21 +73,30 @@ button{
 }
 
 #home_page {
-	border-style: solid;
-	border-color: blue;
-
-	width: 25.4rem;
+	width: 25.59rem;
+	height: 52.5rem;
+	max-height: 52.5rem;
     flex-shrink: 0;
 }
 
 #user_page {
-	border-style: solid;
-	border-color: red;
-
-	width: 25.4rem;
+	width: 25.59rem;
+	height: 52.5rem;
+	max-height: 52.5rem;
     flex-shrink: 0;
 }
 
+
+#settings_page {
+	width: 25.59rem;
+	height: 52.5rem;
+	max-height: 52.5rem;
+	flex-shrink: 0;
+}
+
+.current {
+	backdrop-filter: brightness(50%);
+}
 
 
 @keyframes slidetotheleft {

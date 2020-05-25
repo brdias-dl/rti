@@ -152,12 +152,12 @@ firebase.auth().signOut().then(function() {
 
 */
 
+
 function entrar() {
-    $("#login_page").slideToggle(500);
+    $("#login_page").slideUp(500);
     setTimeout(() => {
-        $("#home_page").slideToggle(500);
-        document.getElementById("user_page").style = "transform: translateX(100%);";
-        $("#settings_page").slideToggle(500);
-        $("#navbar").fadeToggle(500);
+        $("#home_page").slideDown(500);
+        $("#navbar").slideDown(500);
+        currentPage = "home_page";
         }, 500);
 }
