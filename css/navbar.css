@@ -1,5 +1,6 @@
 .navbar {
     background: var(--accent);
+    width: 99.9vw;
 }
 
 .navbar-nav {

@@ -7,8 +7,8 @@
 	background-color: var(--background);
 
 	font-size: 15px;
-	max-width: 25.59rem;
-	max-height: 52.5rem;
+	max-width: 99.9vw;
+	max-height: 87.4vh;
 }
 
 body {
@@ -73,8 +73,10 @@ button{
 }
 
 #home_page {
-	width: 25.59rem;
-	height: 52.5rem;
+	border-color: blue;
+	border-style: solid;
+	width: 99.9vw;
+	height: 87.4vh;
 	max-height: 52.5rem;
     flex-shrink: 0;
 }
